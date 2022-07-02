@@ -313,6 +313,7 @@ body{
 .projects-showcase{
     margin-top: 35px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
@@ -321,7 +322,7 @@ body{
     display: inline-block;
     width: 400px;
     /* height: 300px; */
-    margin: 0 20px;
+    margin: 10px 20px;
     border: 1px solid #DADADA;
     padding: 18px;
     border-radius: 15px;
@@ -401,6 +402,10 @@ body{
         font-size: 1.6rem;
     }
 
+    .navbar-logo{
+        display: none;
+    }
+
     .btn{
         width: 100px;
         text-align: center;
@@ -411,3 +416,4 @@ body{
         /* display: inline; */
     }
 }
+/* ###################################################### */
