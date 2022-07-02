@@ -117,14 +117,43 @@ body{
     /* margin-top: 48px; */
 }
 
-.main-logo{
-    color: #DADADA;
-    font-size: 3.5rem;
-    font-weight: 400;
+.main-logo-container {
     position: absolute;
     top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.main-logo{
+    color: #DADADA;
+    font-size: 3.5rem;
+    font-weight: 400;
+    
+    overflow: hidden;
+    border-right: .15em solid #DADADA; /* CARET */
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 1.5s steps(14, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing{
+    from{
+        width: 0;
+    }
+
+    to{
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret{
+    from, to{
+        border-color: transparent;
+    }
+
+    50%{
+        border-color: #DADADA;
+    }
 }
 
 .main-logo::before{
@@ -333,5 +362,10 @@ body{
     .btn{
         width: 100px;
         text-align: center;
+    }
+
+    .navbar-items .navbar-item{
+        padding: 0px 5px 0px 5px;
+        /* display: inline; */
     }
 }
