@@ -28,11 +28,12 @@ body{
 .btn{   
     text-decoration: none;
     color: #DADADA;
-    font-size: 2.1rem;
+    font-size: 2rem;
     border-radius: 20px;
     padding: 10px;
     transition: all 0.3s ease-in-out;
     background-color: #353535;
+    text-align: center;
 }
 
 .fa-icon{
@@ -165,7 +166,7 @@ body{
 
 /* ################# About Section ################# */
 .about-section{
-    height: 35vh;
+    /* height: 35vh; */
     width: 50vh;
     border: 1px solid #DADADA;
     border-radius: 40px;
@@ -247,9 +248,8 @@ body{
 
 .project{
     display: inline-block;
-    max-width: 400px;
-    max-height: 300px;
-    height: 100%;
+    width: 400px;
+    /* height: 300px; */
     margin: 0 20px;
     border: 1px solid #DADADA;
     padding: 18px;
@@ -318,4 +318,20 @@ body{
     margin: auto;
     font-size: 1.6rem;
     color: #DADADA;
+}
+
+/* ##################### Media Queries ####################### */
+@media (max-width: 500px) {
+    html{
+        font-size: 50%;
+    }
+
+    .button-wrapper a{
+        font-size: 1.6rem;
+    }
+
+    .btn{
+        width: 100px;
+        text-align: center;
+    }
 }
