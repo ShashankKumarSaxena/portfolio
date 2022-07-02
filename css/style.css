@@ -199,6 +199,7 @@ body{
 /* #################### Language Section #################### */
 .language-section{
     margin-top: 25px;
+    margin-bottom: 25px;
 }
 .language-heading h2{
     text-align: center;
@@ -206,4 +207,61 @@ body{
     font-size: 2.1rem;
     font-weight: 600;
     margin-bottom: 15px;
+}
+
+.language-images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.language-image{
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
+    object-position: center;
+    padding: 5px 7px 5px 7px;
+}
+
+/* ######################### Projects Styling ######################## */
+.projects-section{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.projects-heading h2{
+    text-align: center;
+    color: #DADADA;
+    font-size: 2.1rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.projects-showcase{
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project{
+    max-width: 400px;
+    margin: 0 20px;
+    border: 1px solid #DADADA;
+    padding: 18px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.project h3{
+    font-weight: 700;
+    font-size: 2rem;
+    padding-bottom: 5px;
+    color: #DADADA;
+}
+
+.project p{
+    color: #DADADA;
+    font-weight: 300;
+    font-size: 1.4rem;
 }
