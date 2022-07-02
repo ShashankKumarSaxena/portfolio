@@ -226,7 +226,7 @@ body{
 /* ######################### Projects Styling ######################## */
 .projects-section{
     margin-top: 25px;
-    margin-bottom: 25px;
+    margin-bottom: 100px;
 }
 
 .projects-heading h2{
@@ -301,5 +301,20 @@ body{
 
 .project-feature{
     font-size: 1.2rem;
+    color: #DADADA;
+}
+
+/* ############### Footer Styling ############## */
+.footer-section{
+    background-color: #323232;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+}
+
+.footer-text {
+    text-align: center;
+    margin: auto;
+    font-size: 1.6rem;
     color: #DADADA;
 }
