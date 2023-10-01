@@ -1,0 +1,80 @@
+@import "constants";
+@import "mixins";
+
+.oneSpace {
+    margin-left: 4rem;
+}
+
+.twoSpace {
+    margin-left: 10rem;
+}
+
+.threeSpace {
+    margin-left: 16rem;
+}
+
+.container {
+    .gradientBall {
+        @include gradientBlurSpread;
+
+        width: 600px;
+        height: 600px;
+        position: absolute;
+        top: 60%;
+        left: 3%;
+    }
+    margin-top: 30px;
+
+    .itemsContainer {
+        margin-top: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .descriptionContainer {
+            h1 {
+                font-size: 3.2rem;
+                font-weight: 800;
+                margin-bottom: 2.8rem;
+            }
+            p {
+                margin-top: 2.8rem;
+                color: $lightGray;
+                font-weight: 400;
+                font-size: 2rem;
+            }
+
+            .socialsContainer {
+                margin-top: 65px;
+                
+                a {
+                    width: 32px;
+                    height: 32px;
+
+                    .socialsLogo {
+                        margin-right: 40px;
+                        transition: all 0.3s ease-in-out;
+                        margin-bottom: 20px;
+    
+                        &:nth-child(1) {
+                            margin-left: 20px;
+                        }
+    
+                        &:hover {
+                            width: 38px;
+                            height: 38px;
+                            margin-bottom: 14px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .imageContainer {
+            .profileImage {
+                border-radius: 50%;
+                box-shadow: 2px 0px 160px 6px $bhagwaRang;
+            }
+        }
+    }
+}

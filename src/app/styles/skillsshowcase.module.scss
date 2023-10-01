@@ -1,0 +1,72 @@
+@import "constants";
+@import "mixins";
+
+.skillsContainer {
+  margin-top: 14rem; // Maybe I should change it to px
+
+  .skillsHeading {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 3.2rem;
+    margin-bottom: 80px;
+  }
+
+  .contentsContainer {
+    margin-left: 140px;
+    margin-right: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .skillsImageContainer {
+      display: grid;
+      grid-template-columns: 100px 100px 100px 100px;
+
+      img {
+        margin-bottom: 40px;
+      }
+    }
+
+    .quoteContainer {
+      p {
+        font-weight: 600;
+        font-size: 2.4rem;
+
+        .purpleText {
+          @include purpleText;
+        }
+
+        .greenText {
+          @include greenText;
+        }
+      }
+    }
+
+    .arrowContainer {
+        position: absolute;
+        top: 130%;
+        left: 44%;
+    }
+    
+    .devNote {
+        position: absolute;
+        font-weight: 400;
+        font-size: 1.8rem;
+        font-family: 'Segoe Script';
+        top: 123%;
+        left: 46%;
+        transform: rotate(-20.4deg);
+    }
+
+    .gradientBall {
+        @include gradientBlurSpread;
+
+        width: 600px;
+        height: 600px;
+        position: absolute;
+        top: 152%;
+        left: 60%;
+    }
+  }
+}
