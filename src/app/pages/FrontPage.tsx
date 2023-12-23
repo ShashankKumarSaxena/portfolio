@@ -81,12 +81,26 @@ export default function FrontPage() {
           </div>
         </div>
         <div className={style.imageContainer}>
-          <Image
+          {/* <Image
             src="/profilepic.png"
             alt="Scypher!"
             width={325}
             height={325}
             className={style.profileImage}
+          /> */}
+          <Image
+            src="/profilebase.jpg"
+            alt="Scypher!"
+            width={325}
+            height={325}
+            className={style.profileImage}
+          />
+          <Image
+            src="/thugglasses.png"
+            alt="Thug Life!"
+            width={250}
+            height={250}
+            className={style.thugGlasses}
           />
         </div>
       </div>

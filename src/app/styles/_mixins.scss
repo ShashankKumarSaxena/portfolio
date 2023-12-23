@@ -7,6 +7,7 @@
     flex-shrink: 0;
     background: linear-gradient(180deg, #00e0ca7b 23.23%, #5913ef79 100%);
     border-radius: 50%;
+    overflow: hidden;
     filter: blur(210px) brightness(0.74);
     z-index: -2;
 }
@@ -17,4 +18,11 @@
 
 @mixin greenText {
     color: $neonGreen;
+}
+
+@mixin sectionHeading {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 3.2rem;
 }

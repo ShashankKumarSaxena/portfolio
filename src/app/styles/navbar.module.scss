@@ -1,8 +1,7 @@
 @import "constants";
 
-
 .navbarContainer {
-margin-top: 65px;
+  margin-top: 65px;
 
   .navbarItemsContainer {
     list-style: none;
@@ -16,26 +15,42 @@ margin-top: 65px;
     }
 
     .getintouchBtn {
+      transition: all 0.3s ease-in-out;
+
       .getintouchLink {
         // rotate: 90deg;
         padding: 12px 26px 12px 26px;
         border-radius: 30px;
         border: 2px solid transparent;
         border-width: 2px;
-        background: linear-gradient($blackColor, $blackColor) padding-box, 
-                    linear-gradient(to right, $neonGreen, $neonPurple) border-box;
+        background: linear-gradient($blackColor, $blackColor) padding-box,
+          linear-gradient(to right, $neonGreen, $neonPurple) border-box;
         text-decoration: none;
         font-size: 1.8rem;
         color: #fff;
         font-weight: 500;
-        -webkit-transition: all 0.3s;
-        transition: all 0.3s;
+        transition: all 0.3s ease-in-out;
 
         // TODO: Fix this to make button hover smooth transition
         &:hover {
-            background: linear-gradient(to right, $neonGreen, $neonPurple) padding-box,
-                        linear-gradient(to right, $neonGreen, $neonPurple) border-box;
+          background: linear-gradient(to right, $neonGreen, $neonPurple)
+              padding-box,
+            linear-gradient(to right, $neonGreen, $neonPurple) border-box;
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .navbarContainer {
+    .navbarItemsContainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .name {
+        display: none;
       }
     }
   }

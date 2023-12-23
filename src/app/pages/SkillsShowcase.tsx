@@ -4,7 +4,9 @@ import Image from "next/image";
 export default function SkillsShowcase() {
   return (
     <div className={style.skillsContainer}>
-      <h2 className={style.skillsHeading}>My Skills</h2>
+      <h2 className={style.skillsHeading}>
+        My <span className={style.greenText}>Skills</span>
+      </h2>
       <div className={style.contentsContainer}>
         <div className={style.skillsImageContainer}>
           <Image
@@ -72,16 +74,21 @@ export default function SkillsShowcase() {
         <div className={style.quoteContainer}>
           <p>
             I <span className={style.purpleText}>hunt bugs</span> with a keen
-            eye,<br />In code and threats, I reach for the sky.<br />A{" "}
-            <span className={style.greenText}>developer's</span> heart, in me
-            does reside,<br />In this cyber world, I take it in stride.<br />
+            eye,
+            <br />
+            In code and threats, I reach for the sky.
+            <br />A <span className={style.greenText}>developer's</span> heart,
+            in me does reside,
+            <br />
+            In this cyber world, I take it in stride.
+            <br />
           </p>
         </div>
         <div className={style.arrowContainer}>
-            <Image src="/arrow.svg" alt="Arrow" width={170} height={40} />
+          <Image src="/arrow.svg" alt="Arrow" width={170} height={40} />
         </div>
         <div className={style.devNote}>
-            <p>Yes, I use them all</p>
+          <p>Yes, I use all of them</p>
         </div>
         <div className={style.gradientBall} />
       </div>
