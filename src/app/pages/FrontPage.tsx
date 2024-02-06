@@ -19,15 +19,15 @@ export default function FrontPage() {
             portfolio = {"{"}
             <br />
             <span className={style.oneSpace}>
-              "Role": "Part-time Bug Bounty Hunter",
+              &quot;Role&quot;: &quot;Part-time Bug Bounty Hunter&quot;,
             </span>
             <br />
             <span className={style.oneSpace}>
-              "Interests": {"["}"Cyber Security Enthusiast",
+              &quot;Interests&quot;: {"["}&quot;Cyber Security Enthusiast&quot;,
               <br />
             </span>
             <span className={style.threeSpace}>
-              "Passionate Developer"{"]"}
+              &quot;Passionate Developer&quot;{"]"}
             </span>
             <br />
             <span className={style.twoSpace}>{"}"}</span>

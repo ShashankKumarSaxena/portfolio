@@ -73,8 +73,7 @@ export default function SkillsShowcase() {
         </div>
         <div className={style.quoteContainer}>
           <p>
-            I <span className={style.purpleText}>hunt bugs</span> with a keen
-            eye,
+            I am a <span className={style.purpleText}>bug bounty</span> hunter,
             <br />
             In code and threats, I reach for the sky.
             <br />A <span className={style.greenText}>developer's</span> heart,
