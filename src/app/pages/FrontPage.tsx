@@ -14,7 +14,7 @@ export default function FrontPage() {
             Full Stack Developer 👋
           </h1>
           <p>
-            Hi, I'm Shashank Saxena.
+            Hi, I&apos;m Shashank Saxena.
             <br />
             portfolio = {"{"}
             <br />
