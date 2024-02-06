@@ -76,7 +76,7 @@ export default function SkillsShowcase() {
             I am a <span className={style.purpleText}>bug bounty</span> hunter,
             <br />
             In code and threats, I reach for the sky.
-            <br />A <span className={style.greenText}>developer's</span> heart,
+            <br />A <span className={style.greenText}>developer&apos;s</span> heart,
             in me does reside,
             <br />
             In this cyber world, I take it in stride.
